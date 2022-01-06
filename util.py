@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 #------------------------------------------------------------------------------
 def init():
     random.seed(1337)
-    np.set_printoptions(threshold=np.nan)   # Print full np matrix
+    np.set_printoptions(threshold=sys.maxsize)   # Print full np matrix
     np.random.seed(1337)                    # for reproducibility
     sys.setrecursionlimit(40000)
 
